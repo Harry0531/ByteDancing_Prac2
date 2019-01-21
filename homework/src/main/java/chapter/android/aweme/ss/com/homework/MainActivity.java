@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CircleImageView circleImageView = findViewById(R.id.circle_view);
-        circleImageView.setImageResource(R.drawable.icon_micro_game_comment);
+        circleImageView.setImageResource(R.drawable.icon_girl);
         findViewById(R.id.btn_exercises1).setOnClickListener(this);
         findViewById(R.id.btn_exercises2).setOnClickListener(this);
         findViewById(R.id.btn_exercises3).setOnClickListener(this);

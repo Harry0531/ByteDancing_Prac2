@@ -1,6 +1,11 @@
 package chapter.android.aweme.ss.com.homework.model;
 
 
+import android.content.Context;
+import android.content.res.Resources;
+
+import chapter.android.aweme.ss.com.homework.R;
+
 /**
  * 消息  data class
  */
@@ -36,8 +41,16 @@ public class Message {
         this.description = description;
     }
 
-    public String getIcon() {
-        return icon;
+    public int getIcon() {
+        switch (icon){
+            case "TYPE_ROBOT":return R.drawable.session_robot;
+            case "TYPE_SYSTEM":return R.drawable.session_system_notice;
+            case "TYPE_GAME":return R.drawable.icon_micro_game_comment;
+            case "TYPE_STRANGER":return R.drawable.session_stranger;
+            case "TYPE_USER":return R.drawable.icon_girl;
+            default:return R.drawable.icon_girl;
+        }
+
     }
 
     public void setIcon(String icon) {
